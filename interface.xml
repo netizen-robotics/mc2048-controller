@@ -1,0 +1,9 @@
+<library path="mc2408_controller">
+  <class name="netizen_robotics/MC2408Controller"
+    type="netizen_robotics::MC2408Controller"
+    base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Ros2 controller for MC2408 board.
+    </description>
+  </class>
+</library>

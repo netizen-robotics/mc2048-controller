@@ -1,0 +1,1 @@
+float movingAverage(float newValue, float lastAverage, int windowSize);
