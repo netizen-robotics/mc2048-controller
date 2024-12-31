@@ -18,7 +18,7 @@ namespace netizen_robotics
         try
         {
             port.Open(portname);
-            port.SetBaudRate(LibSerial::BaudRate::BAUD_1500000);
+            port.SetBaudRate(LibSerial::BaudRate::BAUD_250000);
             port.SetCharacterSize(LibSerial::CharacterSize::CHAR_SIZE_8);
             port.SetStopBits(LibSerial::StopBits::STOP_BITS_1);
             port.SetParity(LibSerial::Parity::PARITY_NONE);
