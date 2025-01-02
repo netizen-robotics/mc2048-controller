@@ -77,10 +77,10 @@ namespace netizen_robotics
                                 RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Controller Idle");
                                 break;
                             case RESPONSE_STATE_ACTIVE:
-                                RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Controller Idle");
+                                RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Controller active");
                                 break;
                             case RESPONSE_STATE_ACTIVE_VERBOSE:
-                                RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Controller Active");
+                                RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Controller active verbose");
                                 break;
                             case RESPONSE_STATE_EMERGENCY_STOP_ACTIVATED:
                                 RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Emergency stop activated");
