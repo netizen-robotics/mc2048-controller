@@ -7,8 +7,13 @@
 #include <thread>
 #include <mutex>
 
-#define WHEEL_LEFT_SIGN -1
-#define WHEEL_RIGHT_SIGN 1
+// DDSM Motor
+#define WHEEL_LEFT_SIGN 1
+#define WHEEL_RIGHT_SIGN -1
+
+// SAMI-36-3525
+// #define WHEEL_LEFT_SIGN -1
+// #define WHEEL_RIGHT_SIGN 1
 
 namespace netizen_robotics
 {
