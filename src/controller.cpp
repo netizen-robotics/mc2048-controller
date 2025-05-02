@@ -298,6 +298,7 @@ namespace netizen_robotics
             WheelVelocity wheel = mc2408Handler->getWheelVelocity();
             hw_velocities_left = wheel.left;
             hw_velocities_right = wheel.right;
+            printf("[Tick: %d] left: %f, right: %f\n", wheel.tick, wheel.left, wheel.right);
             if (initialized)
             {
                 // Calculate the position of the wheels using the trapezoidal rule
