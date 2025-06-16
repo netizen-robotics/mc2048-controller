@@ -87,6 +87,10 @@ namespace netizen_robotics
                                 break;
                             case RESPONSE_STATE_EMERGENCY_STOP_DEACTIVATED:
                                 RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Emergency stop deactivated");
+                                // Reset the controller state
+                                port.Write("sa\n");
+                                port.DrainWriteBuffer();
+                                RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Reset controller state");
                                 break;
                             case RESPONSE_STATE_INVALID:
                                 RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Controller under invalid state for command");
