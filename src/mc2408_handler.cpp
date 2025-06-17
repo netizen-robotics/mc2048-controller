@@ -93,7 +93,7 @@ namespace netizen_robotics
                                 RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Reset controller state");
                                 break;
                             case RESPONSE_STATE_INVALID:
-                                RCLCPP_INFO(rclcpp::get_logger("MC2408ControllerHandler"), "Controller under invalid state for command");
+                                // Currently no action needed for this state as it is handled by the emergency cases
                                 break;
                             }
                             break;
